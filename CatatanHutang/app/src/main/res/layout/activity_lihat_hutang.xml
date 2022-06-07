@@ -4,6 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:padding="15dp"
+    android:orientation="vertical"
     tools:context=".LihatHutang">
+
+    <TextView
+        android:id="@+id/nama_pelanggan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nama Pelanggan"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/tanggal_dicatat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Dicatat"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/jumlah_hutang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah Hutang"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+
 
 </LinearLayout>
