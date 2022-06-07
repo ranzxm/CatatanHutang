@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:padding="15dp"
+    tools:context=".InputHutang">
+
+    <TextView
+        android:id="@+id/judulActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Catat Hutang"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:textColor="#FF5252"/>
+
+    <TextView
+        android:id="@+id/text_nama_pelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judulActivity"
+        android:text="Nama Pelanggan"/>
+
+    <EditText
+        android:id="@+id/edt_nama_pelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_nama_pelanggan"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Misal : Jono"/>
+    <TextView
+        android:id="@+id/text_tanggal_hutang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal"
+        android:layout_below="@+id/edt_nama_pelanggan"/>
+
+    <EditText
+        android:id="@+id/edt_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_tanggal_hutang"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="dd-mm-yy" />
+
+    <TextView
+        android:id="@+id/text_nominal_hutang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_tanggal"
+        android:text="Jumlah Hutang" />
+
+    <EditText
+        android:id="@+id/edt_nominal_hutang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_nominal_hutang"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Rp."/>
+
+    <Button
+        android:id="@+id/tmbl_tambahkan_hutang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_nominal_hutang"
+        android:text="Tambahkan hutang"
+        />
+
+
+
+</RelativeLayout>
